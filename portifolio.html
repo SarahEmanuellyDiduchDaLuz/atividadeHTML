@@ -1,35 +1,132 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="portifolio" content="portifolio criado em html">
-    <title>portifolio sarah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Sarah</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e6ff;
+            color: #372e41;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #372e41;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #4207e4 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        header nav {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #b58aff;
+        }
+        #sobre, #projetos, #contato {
+            padding: 20px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        #sobre img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 20px;
+            object-fit: cover; 
+            max-width: 100%;
+        }
+        #contato form label,
+        #contato form input,
+        #contato form textarea {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box; 
+        }
+        #contato form button {
+            background: #4207e4;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #contato form button:hover {
+            background: #5e2ef0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #372e41;
+        }
+    </style>
 </head>
 <body>
     <header>
-<h1>Portfólio de Sarah Emanuelly Diduch da Luz</h1>
- <p>Estudante de desenvolvimento web — HTML, CSS e JavaScript.</p>
-   <nav aria-label="Navegação principal">
-   <ul>
- <li><a href="#sobre">Sobre</a></li>
- <li><a href="#projetos">Projetos</a></li>
- <li><a href="#contato">Contato</a></li>
-   </ul>
-   </nav>
-</header>
+        <div class="container">
+            <h1>Sarah E. D. da Luz </h1>
+            <nav>
+                <a href="#sobre">Sobre Mim</a>
+                <a href="#projetos">Meus Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
 
-<main>
-<section id="sobre">
-<h2>Sobre</h2>
-<figure>
-<img src="https://via.placeholder.com/240" alt="foto">
-<figcaption>Foto ilustrativa do perfil</figcaption>
-</figure>
-<p>
-Olá! bla bla bla bla
-</p>
-</section>
-    
-</body>
-</html>
-.
+    <section id="sobre" class="container">
+        <h2>Sobre Mim</h2>
+        <img src="https://via.placeholder.com/150" alt="Foto de Sarah Emanuelly"> 
+        <p>
+            Olá! Sou a Sarah, uma profissional dedicada por marketing digital.
+            Busco sempre criar soluções inovadoras e eficientes. Acredito que a criatividade e a dedicação são fundamentais para alcançar grandes resultados.
+        </p>
+        <p>
+            Neste portfólio, você poderá conhecer um pouco mais sobre o meu trabalho e os projetos que desenvolvi.
+        </p>
+    </section>
+
+    <section id="projetos" class="container">
+        <h2>Meus Projetos</h2>
+        <article>
+            <h3>Projeto 1: [Nome do Projeto 1]</h3>
+            <p>Uma breve descrição do projeto, seus objetivos e tecnologias utilizadas.</p>
+            <p><a href="https://exemplo.com/projeto1" target="_blank">Ver Projeto</a></p> 
+        </article>
+        <article>
+            <h3>Projeto 2: [Nome do Projeto 2]</h3>
+            <p>Uma breve descrição do projeto, seus objetivos e tecnologias utilizadas.</p>
+            <p><a href="https://exemplo.com/projeto2" target="_blank">Ver Projeto</a></p> 
+        </article>
+        <article>
+            <h3>Projeto 3: [Nome do Projeto 3]</h3>
+            <p>Uma breve descrição do projeto, seus objetivos e tecnologias utilizadas.</p>
+            <p><a href="https://exemplo.com/projeto3" target="_blank">Ver Projeto</a></p>
+        </article>
+    </section>
+
+    <section id="contato" class="con
